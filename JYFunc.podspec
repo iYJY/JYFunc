@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JYFunc"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "JYFunc is my function."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   s.ios.deployment_target = "7.0"
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DYZB/*"
+  s.source_files  = "Utils/*"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -131,6 +131,9 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependencies 'Alamofire', 'Kingfisher'
+  s.dependency 'Alamofire'  
+  s.dependency 'MBProgressHUD'
+  s.dependency 'ObjectMapper'
+  s.dependency'RealmSwift'
 
 end
